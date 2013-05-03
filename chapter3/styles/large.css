@@ -1,0 +1,22 @@
+.wireframe section {
+    margin: 1em 0;
+}
+.wireframe #page {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.wireframe #synopsis {
+    float: left;
+    width: 58%;
+    margin-top: 0;
+}
+.wireframe #purchase {
+    float: right;
+    width: 40%;
+    height: 30em;
+    margin-top: 0;
+}
+.wireframe #purchase+section {
+    clear: both;
+}

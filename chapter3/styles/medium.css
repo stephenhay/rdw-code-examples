@@ -1,0 +1,14 @@
+.wireframe #page {
+    padding-top: 3.5em;
+}
+.wireframe .menu {
+    display: none;
+}
+.wireframe nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: none;
+}
