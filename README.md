@@ -15,7 +15,7 @@ The code here has been tested by me using Dexy version 0.9.9, CasperJS 1.0.0-RC4
 
 If something doesn't work, please read the book text again, stopping at every command and piece of code to see if you can find anything incorrect in your code or commands. I once spent about two hours looking for a bug in a project and it turned out that I had just made a typo. That was before I learned to use a debugger. It happens.
 
-If you're convinced you did everything correctly and you think there's something wrong with the code example, or if you find a bug in the code. You can open an issue here on GitHub and I'll take a look. I have a day job, so it might take a day or two for me to check it out, but I'll try and help where I can. Please only fill the issue queue with issues regarding these specific code examples.
+If you're convinced you did everything correctly and you think there's something wrong with the code example, or if you find a bug in the code, you can open an issue here on GitHub and I'll take a look. I have a day job, so it might take a day or two for me to check it out, but I'll try and help where I can. Please only fill the issue queue with issues regarding these specific code examples.
 
 ## License
 
