@@ -1,9 +1,9 @@
-rdw-code-examples
+Responsive Design Workflow Code Examples
 =================
 
-Code examples from my book Responsive Design Workflow.
+Code examples from my book [Responsive Design Workflow](http://www.responsivedesignworkflow.com).
 
-Please note that these examples will probably only make sense within the context of [the book](http://www.responsivedesignworkflow.com).
+Please note that these examples will probably only make sense within the context of the book.
 
 Each example is meant to demonstrate a specific aspect of the workflow. In chapters 8, 9, 10, and 11, the "design" is a quick one-off and is simply intended to support the code explained in the chapter. The CSS, for example, is irrelevant and is not intended for study.
 
