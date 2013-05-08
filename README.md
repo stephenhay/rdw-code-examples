@@ -17,12 +17,10 @@ If something doesn't work, please read the book text again, stopping at every co
 
 If you're convinced you did everything correctly and you think there's something wrong with the code example, or if you find a bug in the code, you can open an issue here on GitHub and I'll take a look. I have a day job, so it might take a day or two for me to check it out, but I'll try and help where I can. Please only fill the issue queue with issues regarding these specific code examples.
 
+Have fun!
+
 ## License
 
-The code examples are released under the MIT license. Dexy, CasperJS, PhantomJS, and Pandoc are not included in this repository and are separately licensed by their respective copyright holders.
+The code examples are released under the MIT license: http://stephenhay.mit-license.org/
 
-## Have fun
-
-Really!
-
-
+Dexy, CasperJS, PhantomJS, and Pandoc are not included in this repository and are separately licensed by their respective copyright holders.
