@@ -1,0 +1,10 @@
+site:
+    - .markdown|pandoc:
+        - pandoc: { args: '-t html5' }
+
+assets:
+    - .css
+    - .js
+    - .png
+    - .jpg
+

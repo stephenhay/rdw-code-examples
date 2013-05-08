@@ -1,0 +1,57 @@
+{% from 'macros/nav.jinja' import menu with context -%}
+<!DOCTYPE html>
+<html lang="en">
+{% block head -%}
+{% include 'macros/_head.html' -%}
+{% endblock %}
+<body>
+    {% block page -%}
+    <div id="page">
+    {{ content }}
+    </div>
+    {% endblock %}
+    <nav>
+    {% block nav_menu -%}
+    {{ menu() }}
+    {%- endblock %}
+    </nav>   
+    {% block footer -%}
+    {% include 'macros/_footer.html' %}
+    {%- endblock %}
+    <div id="notes" contenteditable></div>
+    <button id="save-notes">Save notes</button>
+    <button id="clear-notes">Delete notes</button>
+    <script>
+        var title = document.title;
+        var note = document.querySelector('#notes');
+        var saveButton = document.querySelector('#save-notes');
+        var clearButton = document.querySelector('#clear-notes');
+
+        function getNote() {
+            if (localStorage['note_'+title]) {
+                note.innerHTML = localStorage['note_'+title];
+            }
+        }
+
+        function saveNote() {
+            localStorage['note_'+title] = note.innerHTML;
+        }
+
+        function deleteNote() {
+            if (localStorage['note_'+title]) {
+                note.innerHTML = '';
+                delete localStorage['note_'+title];
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', getNote);
+
+        saveButton.addEventListener('click', function(e) {
+            saveNote();
+        });
+        clearButton.addEventListener('click', function(e) {
+            deleteNote();
+        });
+    </script>
+</body>
+</html>
