@@ -1,0 +1,30 @@
+{% macro menu() -%}
+<ul>
+{% if current_dir == '' -%}
+    <li>Home</li>
+{% else -%}
+    <li><a href="/">Home</a></li>
+{% endif -%}
+{% for node in root.children -%}
+    {% if node.index_page -%}
+        {% if node.location == ('/' + current_dir) -%}
+            <li class="active">{{ node.index_page.title() }}</li>
+        {% else -%}
+            <li><a href="{{ node.location }}">{{ node.index_page.title() }}</a></li>
+        {% endif -%}
+
+        {% if node.has_children_with_index_pages() -%}
+            {% for child in node.children -%}
+                {% if child.index_page -%}
+                    {% if child.location == ('/' + current_dir) -%}
+                    <li class="active">{{ child.index_page.title() }}</li>
+                    {% else -%}
+                    <li><a href="{{ child.location }}">{{ child.index_page.title() }}</a></li>
+                    {% endif -%}
+                {% endif -%}
+            {% endfor -%}
+        {% endif -%}
+    {% endif -%}
+{% endfor -%}
+</ul>
+{% endmacro %}

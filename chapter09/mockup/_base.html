@@ -1,0 +1,22 @@
+{% from 'macros/nav.jinja' import menu with context -%}
+<!DOCTYPE html>
+<html lang="en">
+{% block head -%}
+{% include 'macros/_head.html' -%}
+{% endblock %}
+<body>
+    {% block page -%}
+    <div id="page">
+    {{ content }}
+    </div>
+    {% endblock %}
+    <nav>
+    {% block nav_menu -%}
+    {{ menu() }}
+    {%- endblock %}
+    </nav>   
+    {% block footer -%}
+    {% include 'macros/_footer.html' %}
+    {%- endblock %}
+</body>
+</html>
