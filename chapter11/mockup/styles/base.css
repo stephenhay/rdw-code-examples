@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 100%;
+    font-family: Gill Sans, Helvetica, Arial, sans-serif;
+    border-top: 1em solid #00a754;
+    color: #1a1919;
+    line-height: 1.5;
+    background-color: #ededed;
+} 
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 200;
+}
+/*** @export "h1" css */
+h1 {
+    text-transform: uppercase;
+    background-color: #45565c;
+    color: #fee29d;
+    margin-top: 0;
+    font-size: 2em;
+    padding: .5em .5em 1em;
+    box-shadow: 0px 10px 50px silver;
+}
+/*** @end */
+h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+p { 
+    margin: 1em; 
+} 
+
+h1+p {
+    background-color: #6e5278;
+    color: #64c372;
+    padding: .5em;
+    margin-top: -3em;
+    margin-left: 4em;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+#synopis p:first-child {
+    color: #515ea4;
+}
+#synopis p:first-child::first-line {
+    text-transform: uppercase;
+}
+#synopsis {
+    box-sizing: border-box;
+    padding: 0 3em;
+}
+#buy {
+    box-sizing: border-box;
+    margin-top: -1em;
+}
+#buy img {
+    -webkit-transform: rotate(3deg);
+    width: 70%;
+    box-shadow: 20px 20px 80px rgba(110, 82, 120, 0.2);
+}
+#buy button {
+    display: block;
+    border: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    text-align:center;
+    box-shadow: 1px 1px 6px gray;
+    background: #515ea4;
+    margin: .5em 0 0 11em;
+}
+nav {
+    clear: both;
+}
+@media screen and (max-width: 599px) {
+    #buy img {
+        position: absolute;
+        top: 5em;
+        right: 1em;
+        width: 5em;
+    }
+    #synopsis {
+        padding: 1em;
+    }
+    h1+p {
+        margin-left: 1em;
+    }
+}
